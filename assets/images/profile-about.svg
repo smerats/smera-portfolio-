@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aboutBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a12" />
+      <stop offset="50%" stop-color="#111322" />
+      <stop offset="100%" stop-color="#07080f" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <radialGradient id="purpleGlow" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25" />
+      <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="600" height="700" rx="36" fill="url(#aboutBg)" />
+  <circle cx="300" cy="300" r="260" fill="url(#purpleGlow)" />
+
+  <!-- Outer Glass Border -->
+  <rect x="20" y="20" width="560" height="660" rx="28" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Code editor style header -->
+  <g transform="translate(45, 45)">
+    <rect width="510" height="42" rx="12" fill="#141628" />
+    <circle cx="25" cy="21" r="5" fill="#ef4444" opacity="0.8" />
+    <circle cx="45" cy="21" r="5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="65" cy="21" r="5" fill="#10b981" opacity="0.8" />
+    <text x="255" y="26" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8">about-smera.py — CS Engineer</text>
+  </g>
+
+  <!-- Graphic Silhouette with Glowing Tech Elements -->
+  <g transform="translate(300, 290)">
+    <!-- Tech Geometry -->
+    <polygon points="0,-160 140,-80 140,80 0,160 -140,80 -140,-80" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="10 5" />
+    <polygon points="0,-130 115,-65 115,65 0,130 -115,65 -115,-65" fill="#131526" fill-opacity="0.6" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" />
+    
+    <!-- Abstract Tech Avatar -->
+    <circle cx="0" cy="-35" r="50" fill="#1f223d" stroke="url(#accentGrad)" stroke-width="2" />
+    <path d="M -45 -30 C -45 -70, 45 -70, 45 -30 C 35 -50, -35 -50, -45 -30 Z" fill="#323761" />
+    <path d="M -75 80 C -75 10, -40 0, 0 0 C 40 0, 75 10, 75 80 Z" fill="#191b30" stroke="url(#accentGrad)" stroke-width="1.5" />
+    
+    <!-- Connected Neural Network Nodes -->
+    <line x1="-120" y1="-50" x2="-50" y2="-35" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.7" />
+    <line x1="120" y1="-50" x2="50" y2="-35" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7" />
+    <line x1="-100" y1="50" x2="-60" y2="40" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.7" />
+    <line x1="100" y1="50" x2="60" y2="40" stroke="#06b6d4" stroke-width="1.5" stroke-opacity="0.7" />
+
+    <circle cx="-120" cy="-50" r="8" fill="#8b5cf6" />
+    <circle cx="120" cy="-50" r="8" fill="#38bdf8" />
+    <circle cx="-100" cy="50" r="7" fill="#a855f7" />
+    <circle cx="100" cy="50" r="7" fill="#06b6d4" />
+  </g>
+
+  <!-- Code Card / Info Capsule -->
+  <g transform="translate(60, 480)">
+    <rect width="480" height="150" rx="20" fill="#0c0e1a" fill-opacity="0.9" stroke="url(#accentGrad)" stroke-width="1.5" />
+    
+    <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-size="13" fill="#a855f7">class <tspan fill="#38bdf8">Engineer</tspan>:</text>
+    <text x="50" y="66" font-family="'JetBrains Mono', monospace" font-size="12" fill="#cbd5e1">name = <tspan fill="#34d399">"SMERA T S"</tspan></text>
+    <text x="50" y="90" font-family="'JetBrains Mono', monospace" font-size="12" fill="#cbd5e1">college = <tspan fill="#34d399">"SNMIMT Maliankara (KTU)"</tspan></text>
+    <text x="50" y="114" font-family="'JetBrains Mono', monospace" font-size="12" fill="#cbd5e1">focus = [<tspan fill="#f59e0b">"AI/ML"</tspan>, <tspan fill="#f59e0b">"Web Dev"</tspan>, <tspan fill="#f59e0b">"Problem Solving"</tspan>]</text>
+    
+    <circle cx="430" cy="75" r="24" fill="#17192c" stroke="#8b5cf6" stroke-width="1.5" />
+    <text x="430" y="80" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" fill="#38bdf8">&lt;/&gt;</text>
+  </g>
+</svg>
+

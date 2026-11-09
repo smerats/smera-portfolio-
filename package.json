@@ -1,0 +1,21 @@
+{
+  "name": "smera-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website for SMERA T S - Computer Science Engineer & Aspiring Software Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "smera-t-s",
+    "computer-science",
+    "software-engineer",
+    "ai-ml",
+    "web-developer"
+  ],
+  "author": "SMERA T S",
+  "license": "MIT"
+}
+
