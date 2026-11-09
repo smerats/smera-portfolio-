@@ -425,52 +425,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // =========================================================================
-  // 10. INTERACTIVE CONTACT FORM & QUICK COPY
+  // 10. CONTACT EMAIL CLIPBOARD COPY
   // =========================================================================
-  const contactForm = document.getElementById('portfolio-contact-form');
-  const formFeedback = document.getElementById('form-feedback');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const nameInput = document.getElementById('sender-name');
-      const emailInput = document.getElementById('sender-email');
-      const subjectInput = document.getElementById('message-subject');
-      const messageInput = document.getElementById('message-body');
-
-      const name = nameInput ? nameInput.value.trim() : '';
-      const email = emailInput ? emailInput.value.trim() : '';
-      const subject = subjectInput ? subjectInput.value.trim() : 'Inquiry from Portfolio';
-      const message = messageInput ? messageInput.value.trim() : '';
-
-      if (!name || !email || !message) {
-        alert('Please fill in your name, email, and message before sending.');
-        return;
-      }
-
-      // Pre-compose mailto URI
-      const targetEmail = 'smerasam2006@gmail.com';
-      const mailtoSubject = encodeURIComponent(`[Portfolio Contact] ${subject} - from ${name}`);
-      const mailtoBody = encodeURIComponent(`Hi Smera,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\n---\nSent via smera-portfolio website`);
-      
-      const mailtoLink = `mailto:${targetEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
-
-      // Open email client
-      window.location.href = mailtoLink;
-
-      // Show confirmation
-      if (formFeedback) {
-        formFeedback.className = 'form-feedback success';
-        formFeedback.innerHTML = `
-          <strong>Message Prepared!</strong> Opening your email client to send to Smera. If your mail client didn't launch automatically, you can also connect via LinkedIn or directly copy the email address.
-        `;
-        formFeedback.style.display = 'block';
-      }
-
-      contactForm.reset();
-    });
-  }
+  // The "Copy Email" link in the contact card opens Gmail Compose.
+  // No form handling needed — form was replaced with direct Gmail CTA.
 
   // Clipboard Quick Copy Utility
   const copyButtons = document.querySelectorAll('[data-copy-text]');
